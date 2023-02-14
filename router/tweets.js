@@ -41,7 +41,7 @@ router.get("/:id", (req, res, next) => {
   }
 });
 // POST /tweets
-router.get("/", (req, res, next) => {
+router.post("/", (req, res, next) => {
   const { text, name, username } = req.body;
   const tweet = {
     id: Date.now().toString(),
@@ -54,7 +54,7 @@ router.get("/", (req, res, next) => {
   res.status(201).json(tweet);
 });
 // PUT /tweets/:id
-router.get("/:id", (req, res, next) => {
+router.put("/:id", (req, res, next) => {
   const id = req.params.id;
   const text = req.body.text;
   const tweet = tweets.find(t => t.id === id);
