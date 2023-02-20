@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import * as userRepository from "../data/auth.js";
 
 // TODO: Make it secure!
-const jwtSecretKey = "bck5zbj2pxc@YUB.gyn";
+const jwtSecretKey = "F2dN7x8HVzBWaQuEEDnhsvHXRWqAR63z";
 const jwtExpiresInDays = "2d";
 const bcryptSaltRounds = 12;
 
